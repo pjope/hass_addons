@@ -66,3 +66,11 @@ ingress:
 4. Start the add-on
 
 5. Update your Home Assistant configuration to use the HTTPS endpoints
+
+## Troubleshooting
+
+If you encounter the "not a valid add-on repository" error when adding this repository, make sure:
+
+1. The repository is public on GitHub
+2. It contains a valid repository.yaml file in the root directory
+3. The repository structure follows Home Assistant's add-on requirements

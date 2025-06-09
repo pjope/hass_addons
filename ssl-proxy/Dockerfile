@@ -5,7 +5,8 @@ FROM $BUILD_FROM
 RUN apk add --no-cache \
     nginx \
     openssl \
-    jq
+    jq \
+    gettext-envsubst
 
 # Copy configuration files
 COPY run.sh /
