@@ -52,7 +52,7 @@ EOF
 
 # Process each service
 for service in $(echo "$SERVICES" | jq -r '.[] | @base64'); do
-    SERVICE_CONFIG=$(echo "$service" | base64 --decode)
+    SERVICE_CONFIG=$(echo "$service" | base64 -d)
     
     NAME=$(echo "$SERVICE_CONFIG" | jq -r '.name')
     TARGET_HOST=$(echo "$SERVICE_CONFIG" | jq -r '.target_host')
