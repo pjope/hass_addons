@@ -18,7 +18,7 @@ ports_description:
 options:
   services:
     - name: "unraid"
-      target_host: "192.168.178.93"
+      target_host: "192.168.178.10"
       target_port: 80
       ssl_port: 8443
       domain: "unraid.local"
