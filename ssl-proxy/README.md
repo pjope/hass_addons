@@ -7,7 +7,7 @@ This add-on provides SSL-terminating reverse proxy functionality for HTTP servic
 ```yaml
 services:
   - name: "unraid"
-    target_host: "192.168.178.93"
+    target_host: "192.168.178.10"
     target_port: 80
     ssl_port: 8443
     domain: "unraid.local"
@@ -55,7 +55,7 @@ ingress:
    ```yaml
    services:
      - name: "unraid"
-       target_host: "192.168.178.93"
+       target_host: "192.168.178.10"
        target_port: 80
        ssl_port: 8443
        domain: "unraid.local"
